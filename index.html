@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijeet Prasad | Resume</title>
+    <style>
+        :root {
+            --primary-orange: #E67E22;
+            --dark-blue: #1A2A40;
+            --text-gray: #333;
+            --border-color: #E67E22;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.5;
+            color: var(--text-gray);
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            display: flex;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* The Orange Top Bar Decor */
+        .top-accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 15px;
+            background-color: var(--primary-orange);
+        }
+
+        /* The Dark Blue Sidebar Decor */
+        .sidebar-line {
+            width: 35px;
+            background-color: var(--dark-blue);
+            flex-shrink: 0;
+        }
+
+        .main-content {
+            padding: 40px;
+            flex-grow: 1;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: var(--primary-orange);
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 15px 0;
+        }
+
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 13px;
+            flex-wrap: wrap;
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-item { display: flex; align-items: center; gap: 5px; }
+
+        /* Section Layout */
+        section {
+            display: flex;
+            margin-top: 25px;
+            border-top: 2px solid var(--border-color);
+            padding-top: 10px;
+        }
+
+        .section-label {
+            flex: 0 0 160px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .section-body {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        /* Specific Styles */
+        .job-title-row {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .company-name { font-style: italic; margin-bottom: 8px; }
+
+        ul { padding-left: 18px; margin: 5px 0; }
+        li { margin-bottom: 5px; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+
+        .language-container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .lang-item { margin-bottom: 10px; }
+        .dots { color: var(--primary-orange); font-size: 18px; letter-spacing: 2px; }
+        .dots-off { color: #ddd; }
+
+        @media (max-width: 600px) {
+            section { flex-direction: column; }
+            .section-label { margin-bottom: 5px; }
+            .sidebar-line { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <div class="top-accent"></div>
+    <div class="sidebar-line"></div>
+    
+    <div class="main-content">
+        <header>
+            <img src="profile.jpg" alt="Abhijeet Prasad" class="profile-img">
+            <h1>Abhijeet Prasad</h1>
+            <div class="contact-bar">
+                <div class="contact-item">📍 New Delhi 110091</div>
+                <div class="contact-item">📞 7683066320</div>
+                <div class="contact-item">✉️ Prasadabhijeet2125@gmail.com</div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-label">Summary</div>
+            <div class="section-body">
+                Customer communication associate specializing in high-net-worth engagement and premium promotion management. Demonstrated success in delivering compelling sales presentations and driving brand excellence. Consistently achieves strategic sales objectives through effective relationship building and targeted marketing strategies.
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">Skills</div>
+            <div class="section-body">
+                <div class="skills-grid">
+                    <div>• Customer communication</div>
+                    <div>• Brand representation</div>
+                    <div>• Sales presentations</div>
+                    <div>• Event planning</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">Experience</div>
+            <div class="section-body">
+                <div class="job-title-row">
+                    <span>CUSTOMER COMMUNICATION ASSOCIATE</span>
+                    <span>09/2024 - Current</span>
+                </div>
+                <div class="company-name">Club Resorto Hospitality Limited, Delhi</div>
+                <ul>
+                    <li>Acted as the first point of contact for the brand, facilitating customer interactions that reflected a premium hospitality image.</li>
+                    <li><strong>Membership Sales:</strong> Deliver high-impact pitches for luxury club memberships, consistently achieving monthly sales targets.</li>
+                    <li>Managed distribution of premium vacation passes, achieving 30-40% attendance rate for sales presentations.</li>
+                    <li>Led acquisition efforts, engaging high-net-worth individuals for exclusive 5-star venue presentations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">Education and Training</div>
+            <div class="section-body">
+                <div class="job-title-row">
+                    <span>Indian Institute of Management Bangalore</span>
+                    <span>Bangalore, 09/2025</span>
+                </div>
+                <div>BBA</div>
+                <div style="border-top: 1px dashed #ccc; margin: 15px 0;"></div>
+                <div class="job-title-row">
+                    <span>R.S.B.V. Kalyanpuri</span>
+                    <span>Delhi, 05/2024</span>
+                </div>
+                <div>High School Diploma</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">Languages</div>
+            <div class="section-body">
+                <div class="language-container">
+                    <div class="lang-item">
+                        <strong>Hindi</strong><br>
+                        <span class="dots">●●●●●</span><span class="dots-off">○</span><br>
+                        Advanced (C1)
+                    </div>
+                    <div class="lang-item">
+                        <strong>English</strong><br>
+                        <span class="dots">●●●●</span><span class="dots-off">●○</span><br>
+                        Upper Intermediate (B2)
+                    </div>
+                </div>
+                <div class="lang-item">
+                    <strong>Spanish</strong><br>
+                    <span class="dots">●●</span><span class="dots-off">●●●○</span><br>
+                    Intermediate (B1)
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
